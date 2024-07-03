@@ -1,118 +1,117 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<title>HTML Assignment 3</title>
-	<style>
-		#table-1{
-			border:1px solid black;
-			margin:1px;
-			padding:1px;
-		}
-		#t11{
-			text-align:left;
-			border:1px solid black;
-		}
-		#t12{
-			text-align:center;
-			border:1px solid black;
-		}
-		#t13{
-			text-align:right;
-			border:1px solid black;
-		}
-		#table-2{
-			border:1px solid black;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        /* CSS for styling */
+        .middle {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-	<div>
-		<h1 style="text-align:center;">HTML Assignment #3</h1>
-	</div>
-<table id="table-1" class="middle">
-<tr >
-	<td id="t11">left</td>
-	<td class="center">center</td>
-	<td class="right">right</td>
-</tr>
-<tr >
-	<td id="t12">left</td>
-	<td class="center">center</td>
-	<td class="right">right</td>
-</tr>
-<tr >
-	<td id="t13">left</td>
-	<td class="center">center</td>
-	<td class="right">right</td>
-</tr>
-	
-</table>
+    <h1 style="text-align: center;">HTML Assignment #3</h1>
 
+    <!-- Table 1 -->
+    <table class="middle" id="table-1">
+        <tr>
+            <td id="t11">t11</td>
+            <td id="t12">t12</td>
+            <td id="t13" class="right">t13</td>
+        </tr>
+        <tr>
+            <td>t21</td>
+            <td>t22</td>
+            <td>t23</td>
+        </tr>
+        <tr>
+            <td>t31</td>
+            <td>t32</td>
+            <td>t33</td>
+        </tr>
+    </table>
 
-	<table id="table-2" class="middle">
-<tr id="t21">
-	<td colspan="6"></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-		<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-		<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-		<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-	
-</table>
-	<table id="table-3" class="middle">
-  <tr>
-	  <td  style="background-color:green"></td>
-  </tr>
-		<tr><td>
-			<img  id="t-image" src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg">
-		</td></tr>
-		<tr >
-			<td style="background-color:blue;"></td>
-		</tr>
-	</table>
+    <!-- Table 2 -->
+    <table class="middle" id="table-2">
+        <tr>
+            <td id="t21" colspan="6">t21</td>
+        </tr>
+        <tr>
+            <td>t22</td>
+            <td>t23</td>
+            <td>t24</td>
+            <td>t25</td>
+            <td>t26</td>
+            <td>t27</td>
+        </tr>
+        <tr>
+            <td>t31</td>
+            <td>t32</td>
+            <td>t33</td>
+            <td>t34</td>
+            <td>t35</td>
+            <td>t36</td>
+        </tr>
+        <tr>
+            <td>t41</td>
+            <td>t42</td>
+            <td>t43</td>
+            <td>t44</td>
+            <td>t45</td>
+            <td>t46</td>
+        </tr>
+        <tr>
+            <td>t51</td>
+            <td>t52</td>
+            <td>t53</td>
+            <td>t54</td>
+            <td>t55</td>
+            <td>t56</td>
+        </tr>
+        <tr>
+            <td>t61</td>
+            <td>t62</td>
+            <td>t63</td>
+            <td>t64</td>
+            <td>t65</td>
+            <td>t66</td>
+        </tr>
+    </table>
+
+    <!-- Table 3 -->
+    <table class="middle" id="table-3">
+        <tr class="green">
+            <td>t11</td>
+            <td>t12</td>
+            <td>t13</td>
+        </tr>
+        <tr>
+            <td id="t-image" colspan="3">
+                <img src="image-url.jpg" alt="Image Description">
+            </td>
+        </tr>
+        <tr class="blue">
+            <td>t31</td>
+            <td>t32</td>
+            <td>t33</td>
+        </tr>
+    </table>
+
 </body>
-
 </html>
